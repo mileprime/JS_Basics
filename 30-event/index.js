@@ -1,14 +1,43 @@
-//passing by reference
-let obg = { firstName: "Ahmed", age: 99 };
-
-function changeName(obg) {
-  obg.age = 100;
-  return "age updated";
+//let global accessibility
+let y = 9999;
+function print() {
+  if (9 > 8) {
+    console.log(y, "in if condition");
+  }
+  console.log(y, "out if condition");
 }
+console.log(print());
 
-console.log(obg, "before passing it");
-console.log(changeName(obg));
-console.log(obg, "after passing it");
+//var global accessibility
+// function print() {
+//   if (9 > 8) {
+//     var y = 9999;
+//     console.log(y, "in if condition");
+//   }
+//   console.log(y, "out if condition");
+// }
+// console.log(print());
+
+//try & catch & finally
+// try {
+//   let result = add(3, 4);
+//   console.log(result);
+// } catch (e) {
+//   console.log(e, "something wrong!");
+// } finally {
+// }
+
+//passing by reference
+// let obg = { firstName: "Ahmed", age: 99 };
+
+// function changeName(obg) {
+//   obg.age = 100;
+//   return "age updated";
+// }
+
+// console.log(obg, "before passing it");
+// console.log(changeName(obg));
+// console.log(obg, "after passing it");
 
 //passing by value
 // function doubleNum(x) {
